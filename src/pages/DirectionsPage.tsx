@@ -1,12 +1,6 @@
 // src/pages/DirectionsPage.tsx
 import React from 'react';
-import { Box, Typography, Paper, IconButton } from '@mui/material';
-
-// --- Импорты для Swiper и иконок ---
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Navigation } from 'swiper/modules';
-import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
-import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Box, Typography, Paper } from '@mui/material';
 import GallerySlider from "../components/GallerySlider.tsx";
 import PreparationSection from "../components/PreparationSection.tsx";
 

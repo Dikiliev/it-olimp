@@ -1,9 +1,10 @@
 import { Box, Paper, Typography } from '@mui/material';
 
-export enum ImagePosition {
-    LEFT = 'left',
-    RIGHT = 'right',
-}
+export const ImagePosition = {
+    LEFT: 'left',
+    RIGHT: 'right',
+} as const;
+export type ImagePosition = typeof ImagePosition[keyof typeof ImagePosition];
 
 interface ResourceCardProps {
     title: string;

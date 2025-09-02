@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button, Box, Container } from '@mui/material';
+import { AppBar, Toolbar, Button, Box, Container } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import logo from '../assets/Факультет географии и геоэкологии (2).jpg'; // Убедитесь, что путь верный
 

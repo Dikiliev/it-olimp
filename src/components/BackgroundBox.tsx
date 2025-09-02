@@ -22,11 +22,10 @@ const BackgroundBox: React.FC<BackgroundBoxProps> = ({
         py: { xs: 5, md: 8 },
         backgroundImage: `linear-gradient(180deg, #ffffff 00%, #ffffff20 50%, #ffffff 100%), url("${sectionBg}")`,
         backgroundSize: 'cover',
-        backgroundPosition: 'center',
+        backgroundPosition: offset ? `center ${offset}px` : 'center',
         backgroundRepeat: 'no-repeat',
         width: '100%',
         position: 'relative',
-        backgroundPosition: offset ? `center ${offset}px` : 'center',
         ...style
       }}
     >
