@@ -126,7 +126,7 @@ const ContactsSection: React.FC = () => {
                 >
                     <ContactItem icon={<LocalPhoneOutlinedIcon />} text="+7 929 000 55 04" />
                     <ContactItem icon={<MailOutlineIcon />} text="fgig.chesu@yandex.ru" />
-                    <ContactItem icon={<BusinessOutlinedIcon />} text="г. Грозный, П.И. Яшина 31А" />
+                    <ContactItem icon={<BusinessOutlinedIcon />} text="г. Грозный, ул. Льва Яшина, 31А" />
                     <ContactItem icon={<AccessTimeOutlinedIcon />} text="пн - пт, 9:00 - 17:00" />
                 </Paper>
             </Box>
