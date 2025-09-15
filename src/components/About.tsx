@@ -55,15 +55,15 @@ const AboutSection: React.FC = () => {
                             <Typography variant="body1" sx={{ mb: 4 }}>
                                 Олимпиада по экологии, географии и туризму 
                                 ежегодно проходит на базе Чеченского 
-                                государственного университета...
+                                государственного университета им А.А. Кадырова
                             </Typography>
                             <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', fontFamily: '"Cormorant Infant", serif' }}>
-                                Зачем проводят?
+                                Кто может участвовать?
                             </Typography>
                             <Typography variant="body1">
-                                А проводят ее для вас! В ней могут участвовать 
+                                В ней могут участвовать
                                 студенты вузов и ссузов, а также школьники 
-                                9-11 классов...
+                                9-11 классов.
                             </Typography>
                         </Box>
                         <Box sx={{ width: { xs: '100%', md: '50%' } }}>

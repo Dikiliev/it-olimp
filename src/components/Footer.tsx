@@ -7,7 +7,12 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 // ВАЖНО: В стандартном пакете MUI нет иконок VK и OK.
 // Их нужно добавлять как кастомные SVG иконки.
 // Здесь я использую заглушки, чтобы показать структуру.
-import CircleIcon from '@mui/icons-material/Circle'; // Заглушка для VK/OK
+import CircleIcon from '@mui/icons-material/Circle';
+import {VkIcon} from "../assets/icons/VkIcon.tsx";
+import {OkIcon} from "../assets/icons/OkIcon.tsx"; // Заглушка для VK/OK
+
+import { SlSocialVkontakte } from "react-icons/sl";
+
 
 const Footer: React.FC = () => {
     return (
@@ -30,13 +35,13 @@ const Footer: React.FC = () => {
                 {/* --- Левая колонка: Полезные ссылки --- */}
                 <Box>
                     <Typography variant="h6" gutterBottom color={'secondary'}>Полезные ссылки</Typography>
-                    <Link href="#" color="inherit" underline="hover" sx={{ display: 'block', mb: 1 }}>
+                    <Link  href="https://www.chesu.ru/" color="inherit" underline="hover" sx={{ display: 'block', mb: 1 }}>
                         Официальный сайт ЧГУ им. А.А. Кадырова
                     </Link>
-                    <Link href="#" color="inherit" underline="hover" sx={{ display: 'block', mb: 1 }}>
+                    <Link href="https://chechentourism.ru/" color="inherit" underline="hover" sx={{ display: 'block', mb: 1 }}>
                         Министерство Чеченской Республики по туризму
                     </Link>
-                    <Link href="#" color="inherit" underline="hover" sx={{ display: 'block' }}>
+                    <Link href="https://mpr-chr.ru/" color="inherit" underline="hover" sx={{ display: 'block' }}>
                         Министерство природных ресурсов и охраны окружающей среды
                     </Link>
                 </Box>
@@ -45,11 +50,17 @@ const Footer: React.FC = () => {
                 <Box>
                     <Typography variant="h6" color={'secondary'} gutterBottom>Социальные сети</Typography>
                     <Box>
-                        {/* Для VK и OK лучше всего использовать SVG иконки */}
-                        <IconButton href="#" sx={{ color: 'white' }}><CircleIcon /></IconButton>
-                        <IconButton href="#" sx={{ color: 'white' }}><CircleIcon /></IconButton>
-                        <IconButton href="#" sx={{ color: 'white' }}><TelegramIcon /></IconButton>
+                        <IconButton href="https://vk.com/chesu_ru" sx={{ color: 'white' }}>
+                            <SlSocialVkontakte size={24} />
+                        </IconButton>
+                        {/*<IconButton href="https://ok.ru/chesu" sx={{ color: 'white' }}>*/}
+                        {/*    <SlSocialOdnoklassniki size={24} />*/}
+                        {/*</IconButton>*/}
+                        <IconButton href="https://t.me/chesuofficial" sx={{ color: 'white' }}>
+                            <TelegramIcon />
+                        </IconButton>
                     </Box>
+
                 </Box>
             </Box>
 
@@ -67,7 +78,7 @@ const Footer: React.FC = () => {
                     Все права сайта защищены и принадлежат ЧГУ им. А.А. Кадырова ©
                 </Typography>
                 <Typography variant="caption" color="rgba(255, 255, 255, 0.5)">
-                    Замечания и предложения по работе сайта просим отправлять на почтовый ящик <Link href="mailto:pochta@mail.ru" color="inherit">pochta@mail.ru</Link>
+                    Замечания и предложения по работе сайта просим отправлять на почтовый ящик <Link href="mailto:fgig.chesu@yandex.ru" color="inherit">fgig.chesu@yandex.ru</Link>
                 </Typography>
             </Box>
         </Box>
