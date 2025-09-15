@@ -7,10 +7,6 @@ import TelegramIcon from '@mui/icons-material/Telegram';
 // ВАЖНО: В стандартном пакете MUI нет иконок VK и OK.
 // Их нужно добавлять как кастомные SVG иконки.
 // Здесь я использую заглушки, чтобы показать структуру.
-import CircleIcon from '@mui/icons-material/Circle';
-import {VkIcon} from "../assets/icons/VkIcon.tsx";
-import {OkIcon} from "../assets/icons/OkIcon.tsx"; // Заглушка для VK/OK
-
 import { SlSocialVkontakte } from "react-icons/sl";
 
 
